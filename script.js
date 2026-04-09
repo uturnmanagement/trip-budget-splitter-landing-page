@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
   })
 
+  // Configurable API base URL (change for production)
+  const API_BASE = 'http://localhost:3000'; // Update to Railway URL after deployment
+
   // Waitlist form handling (now with backend)
   const form = document.getElementById('waitlistForm');
   if(form){
@@ -34,7 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       const trustLine = form.querySelector('.trust-line');
 
       try {
-        const response = await fetch('/api/waitlist', {
+        const response = await fetch(`${API_BASE}/api/waitlist`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ firstName: name, email: email })
