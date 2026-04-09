@@ -28,6 +28,9 @@ Files:
 4. **Access the admin page to view leads:**
    Go to: http://localhost:3000/admin
 
+- `config.js` controls the frontend API base URL for local or deployed backends.
+- `vercel.json` configures the static frontend deployment.
+
 Editable sections (easy to change):
 - **Hero:** Update headline, subheadline, and CTAs in [index.html](index.html) (top).
 - **Features:** Edit cards under the `#features` section.

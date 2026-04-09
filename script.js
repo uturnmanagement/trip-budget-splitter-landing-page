@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   })
 
   // Configurable API base URL (change for production)
-  const API_BASE = 'http://localhost:3000'; // Update to Railway URL after deployment
+  const API_BASE = window.API_BASE || 'http://localhost:3000';
 
   // Waitlist form handling (now with backend)
   const form = document.getElementById('waitlistForm');
