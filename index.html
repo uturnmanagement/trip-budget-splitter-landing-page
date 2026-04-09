@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trip Budget Splitter — Pre-launch</title>
+    <meta name="description" content="See if your trip budget is realistic before you book." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <div class="container nav">
+        <div class="logo">Trip Budget Splitter</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="#hero">Home</a>
+          <a href="#how">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Avoid Costly Travel Surprises — Know If Your Trip Budget Will Hold Before You Book</h1>
+            <p class="sub">Trip Budget Splitter estimates the real cost of a trip so you can book with confidence.</p>
+            <div class="hero-ctas">
+              <form id="waitlistForm" class="waitlist-form" novalidate>
+                <div class="form-row">
+                  <input id="firstName" name="firstName" type="text" placeholder="First name" aria-label="First name" required />
+                  <input id="email" name="email" type="email" placeholder="Email address" aria-label="Email address" required />
+                </div>
+                <div class="form-row actions">
+                  <button type="submit" class="btn primary">Join the Waitlist</button>
+                  <a class="btn ghost" href="#how">See How It Works</a>
+                </div>
+                <div class="micro-trust">Used by travelers to avoid overspending</div>
+                <div class="trust-line">Be first to know when Trip Budget Splitter launches.</div>
+              </form>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="mock-card">
+              <div class="mock-header">Trip Preview</div>
+              <div class="mock-row"><span>Destination</span><strong>Miami</strong></div>
+              <div class="mock-row"><span>Days</span><strong>5</strong></div>
+              <div class="mock-row"><span>Hotel</span><strong>$900</strong></div>
+              <div class="mock-row"><span>Flight</span><strong>$350</strong></div>
+              <div class="mock-row status"><span>Status</span><strong>Tight</strong></div>
+              <div class="mock-note">Food and transportation may push you over budget</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="section dark-section">
+        <div class="container">
+          <h2>Travelers often underestimate</h2>
+          <p class="muted">Common overlooked costs can derail a trip budget.</p>
+          <ul class="problem-list">
+            <li>Food</li>
+            <li>Transportation</li>
+            <li>Hidden daily spending</li>
+            <li>Total trip cost</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <div class="container">
+          <h2>How It Works</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <h3>Enter trip details</h3>
+              <p>Tell us destination, days, and your known costs.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <h3>Review estimated cost</h3>
+              <p>See likely daily spending and totals.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <h3>See budget status</h3>
+              <p>Get a quick read: Tight, Realistic, or Comfortable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section dark-section">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="cards">
+            <div class="card">Budget Reality Check</div>
+            <div class="card">Daily Spending Cap</div>
+            <div class="card">Low / Medium / Comfort Scenarios</div>
+            <div class="card">Overspending Alerts</div>
+            <div class="card">Simple Planning Summary</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mock" class="section">
+        <div class="container">
+          <h2>Mock Preview</h2>
+          <p class="muted">This is a visual mockup — not a working calculator.</p>
+          <div class="mock-preview">
+            <div class="mock-card large">
+              <div class="mock-header">Trip Preview</div>
+              <div class="mock-row"><span>Destination</span><strong>Miami</strong></div>
+              <div class="mock-row"><span>Days</span><strong>5</strong></div>
+              <div class="mock-row"><span>Hotel</span><strong>$900</strong></div>
+              <div class="mock-row"><span>Flight</span><strong>$350</strong></div>
+              <div class="mock-row status"><span>Status</span><strong>Tight</strong></div>
+              <div class="mock-note">Food and transportation may push you over budget</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section dark-section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Is the tool live yet?</summary>
+              <p>Not yet — this is a pre-launch experience. Join the waitlist.</p>
+            </details>
+            <details>
+              <summary>What does it estimate?</summary>
+              <p>It estimates likely daily spending and total trip cost components.</p>
+            </details>
+            <details>
+              <summary>Will it work for international trips?</summary>
+              <p>Yes — estimates support different destinations and currencies in future releases.</p>
+            </details>
+            <details>
+              <summary>Is it free at launch?</summary>
+              <p>We plan a free tier at launch; details will be shared with early signups.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+          <div class="container footer-grid">
+        <div>
+          <div class="logo">Trip Budget Splitter</div>
+          <div class="muted">Pre-launch</div>
+        </div>
+        <div class="footer-contact">
+          <div class="muted">Contact</div>
+          <div>placeholder@travelradar.ai</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
